@@ -23,6 +23,10 @@ function App(): React.JSX.Element {
         },
 
         options: {
+          layout: {
+            // Transparency here causes a black flash on dismissModal
+            componentBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+          },
           animations: {
             showModal: {
               enter: {
